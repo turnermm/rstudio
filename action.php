@@ -17,7 +17,7 @@ class action_plugin_rstudio extends DokuWiki_Action_Plugin {
   function insert_geshi(&$event,$params) {     
       if(strpos($event->data[0][1],'~~R_STUDIO~~') === false) return;
      $event->data[0][1] = preg_replace_callback(
-        '|(<code>.*?)</file>|sm',
+       '|(<code>(?!</file>).*?)</file>|sm',  //        '|(<code>.*?)</file>|sm',
         function ($matches) {
             return $matches[1] . '</code>';
         },
