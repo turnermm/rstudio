@@ -4,4 +4,4 @@ Using Firefox (or Chrome), it is possible to copy an RStudio page and paste it i
 
           https://www.youtube.com/watch?v=_es_hdQvU8c&feature=youtu.be
           
-Howewever, the RStudio code will not have highlighting. That is the purpose of this plugin. Before saving, at the top of the RStudio page, enter the following macro: ~~R_STUDIO~~. After the page is saved consider removing the macro to prevent unnecessary processing. 
+Howewever, the RStudio code will not have highlighting. That is the purpose of this plugin. Before saving, at the top of the RStudio page, enter the following macro: &#126;&#126;R_STUDIO&#126;&#126;. After the page is saved consider removing the macro to prevent unnecessary processing. 
