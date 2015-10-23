@@ -24,5 +24,16 @@ class action_plugin_rstudio extends DokuWiki_Action_Plugin {
         $event->data[0][1]
      );
       $event->data[0][1] = str_replace('<code>',  '<code rsplus>', $event->data[0][1]);
+   
+    $event->data[0][1] = preg_replace_callback(
+        '|(={2,})\s*(\[\[.*?\]\])\s*(\1)|sm',
+        function ($matches) {           
+            return "**" .$matches[2] . "**\n\n";           
+        },
+        $event->data[0][1]
+        );
+      
+      $event->data[0][1] = preg_replace('#^\n(\s{2,}\*)\s*#sm', "$1", $event->data[0][1]);
+
   }
 }
