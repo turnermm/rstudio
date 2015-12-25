@@ -10,7 +10,7 @@ require_once(DOKU_PLUGIN.'action.php');
    usage:  place ~~R_STUDIO~~ at the top of the RStudio page before saving the copy/paste, then save
  */ 
 class action_plugin_rstudio extends DokuWiki_Action_Plugin {
-  function register(&$controller) {    
+  function register(Doku_Event_Handler $controller) {    
         $controller->register_hook( 'IO_WIKIPAGE_WRITE', 'BEFORE', $this, 'insert_geshi'); 
   }      
   

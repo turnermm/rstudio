@@ -1,7 +1,7 @@
 base  rstudio
 author  Myron Turner
 email  turnermm02@shaw.ca
-date  2015-10-22
+date  2015-12-25
 name  rstudio
 desc  inserts rstudio parameter into code blocks for RStudio geshi css
 url  https://www.dokuwiki.org/plugin:rstudio
